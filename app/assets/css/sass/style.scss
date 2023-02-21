@@ -3,11 +3,14 @@
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 
+body, html {
+    background-color: var(--clr-light);
+}
+
 body {
     font-size: var(--fz-300);
     font-family: var(--ff-primary);
     color: var(--btn-primary);
-    background-color: var(--clr-light);
 }
 
 .container {
@@ -16,4 +19,11 @@ body {
     @media (max-width: 1139px) {
         padding: 0 1.5rem;
     }
+}
+
+.body-text {
+    font-weight: 400;
+    font-size: clamp(1.6rem, 2vw, 1.8rem);
+    line-height: 1.2em;
+    margin-top: 2rem;
 }

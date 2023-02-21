@@ -1,0 +1,11 @@
+.title {
+    font-weight: 600;
+    color: var(--clr-primary);
+    span {
+        color: var(--clr-accent);
+    }
+    &--big {
+        font-size: clamp(3.8rem, 5.5vw, 5.8rem);
+        line-height: 1.2em;
+    }
+}

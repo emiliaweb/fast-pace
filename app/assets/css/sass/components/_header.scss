@@ -1,5 +1,9 @@
 .header {
     padding: 2rem 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
     &-wrap {
         display: flex;
         align-items: center;
@@ -15,7 +19,7 @@
             font-size: clamp(1.4rem, 2vw, 1.8rem); 
             a {
                 color: inherit;
-                transition: all .5s;
+                transition: all .3s;
             }
             &:hover {
                 a {
