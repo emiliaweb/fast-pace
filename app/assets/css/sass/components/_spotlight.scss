@@ -1,0 +1,24 @@
+.spotlight {
+    &-wrap {
+        @media (min-width: 1024px) {
+            display: grid;
+            grid-template-columns: 56rem 1fr;
+            column-gap: clamp(2rem, 6.5vw, 9.2rem);
+        }
+    }
+    &-title {
+        hyphens: none;
+    }
+    &-text {
+        margin-top: 2rem;
+    }
+    &-btn {
+        margin-top: clamp(3rem, 3.5vw, 5rem);
+    }
+    &-img {
+        max-width: 44rem;
+        @media (max-width: 1023px) {
+            margin-top: 5rem;
+        }
+    }
+}
