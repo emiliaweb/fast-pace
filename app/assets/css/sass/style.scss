@@ -10,7 +10,7 @@ body, html {
 body {
     font-size: var(--fz-300);
     font-family: var(--ff-primary);
-    color: var(--btn-primary);
+    color: var(--clr-primary);
 }
 
 .container {
@@ -26,4 +26,8 @@ body {
     font-size: clamp(1.6rem, 2vw, 1.8rem);
     line-height: 1.2em;
     margin-top: 2rem;
+}
+
+.section-spacing {
+    margin-top: 100px;
 }

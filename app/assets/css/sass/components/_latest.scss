@@ -1,0 +1,12 @@
+.latest {
+    &-grid {
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2.3rem;
+    }
+    &-link {
+        margin: 6rem auto 0;
+        max-width: max-content;
+    }
+}
