@@ -20,21 +20,30 @@
             transition: all .5s;
         }
     }
+    &-title, &-price {
+        font-weight: 500;
+        line-height: 1.2em;
+        text-transform: uppercase;
+    }
     &-title {
         margin-top: 2rem;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        max-width: 100%;
-    }
-    &-title, &-price {
-        font-weight: 500;
-        font-size: 1.8rem;
-        line-height: 1.2em;
-        text-transform: uppercase;
+        width: 100%;
+        font-size: clamp(1.4rem, 2vw, 1.8rem);
     }
     &-price {
         margin-top: 1.4rem;
         color: var(--clr-accent);
+        font-size: clamp(1.6rem, 2vw, 1.8rem);
+    }
+}
+
+@media (max-width: 575px) {
+    .card {
+        &-title, &-price {
+            margin-top: 1rem;
+        }
     }
 }
