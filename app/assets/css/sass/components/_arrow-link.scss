@@ -1,6 +1,6 @@
 .arrow-link {
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: clamp(1.6rem, 1.5vw, 1.8rem);
     line-height: 1.2em;
     color: var(--clr-primary);
     display: flex;
