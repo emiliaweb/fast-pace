@@ -21,6 +21,10 @@
         border: 2px solid var(--clr-neutral);
         color: var(--clr-neutral);
     }
+    &--dark {
+        color: var(--clr-light);
+        background-color: var(--clr-primary);
+    }
     @media (max-width: 1023px) {
         padding: 1rem 2rem;
         font-size: 1.6rem;
