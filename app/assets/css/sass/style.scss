@@ -28,9 +28,16 @@ body {
     margin-top: 2rem;
 }
 
-.section-spacing {
-    margin-top: 100px;
+.spacer-100 {
+    margin-top: 10rem;
     @media (max-width: 1023px) {
-        margin-top: 80px;
+        margin-top: 8rem;
+    }
+}
+
+.spacer-170 {
+    margin-top: 17rem;
+    @media (max-width: 1023px) {
+        margin-top: 12rem;
     }
 }

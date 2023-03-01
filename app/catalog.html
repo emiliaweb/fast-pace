@@ -9,7 +9,7 @@
     <title>Fast Pace</title>
     <link rel="stylesheet" href="assets/css/reset.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <link rel="stylesheet" href="assets/css/home-page.min.css">
+    <link rel="stylesheet" href="assets/css/catalog-page.min.css">
 </head>
 <body>
     <header class="header">
@@ -35,84 +35,224 @@
         </div>
     </header>
 
-    <section class="hero">
+    <div class="spacer-170">
         <div class="container">
-            <h1 class="title title--big hero-title">Jump into your <span>new sneakers</span></h1>
-            <div class="body-text hero-text">Find your shoes from our various collections.</div>
-            <div class="hero-btns">
-                <a href="#" class="btn btn--primary">Explore shoes</a>
-                <a href="#" class="btn btn--outline">Learn more</a>
-            </div>
+            <h1 class="title title--big">Find your <span>new sneakers</span></h1>
+            <div class="body-text">Explore our catalog and find your best fit.</div>
         </div>
-    </section>
+    </div>
 
-    <section class="latest spacer-100">
-        <div class="container">
-            <h2 class="title title--medium"><span>Latest</span> arrival</h2>
-            <div class="latest-grid">
-                <a href="#" class="card">
-                    <div class="card-img">
-                        <img src="assets/img/product-1.jpg" alt="product">
-                    </div>
-                    <h3 class="card-title">Nike Air 50 Sneakers</h3>
-                    <div class="card-price">
-                        <strong>58.00$</strong>
-                    </div>
-                </a>
-                <a href="#" class="card">
-                    <div class="card-img">
-                        <img src="assets/img/product-2.jpg" alt="product">
-                    </div>
-                    <h3 class="card-title">Nike Air 50 Sneakers</h3>
-                    <div class="card-price">
-                        <strong>67.00$</strong>
-                    </div>
-                </a>
-                <a href="#" class="card">
-                    <div class="card-img">
-                        <img src="assets/img/product-3.jpg" alt="product">
-                    </div>
-                    <h3 class="card-title">Nike Air 50 Sneakers</h3>
-                    <div class="card-price">
-                        <strong>90.00$</strong>
-                    </div>
-                </a>
-                <a href="#" class="card">
-                    <div class="card-img">
-                        <img src="assets/img/product-4.jpg" alt="product">
-                    </div>
-                    <h3 class="card-title">Nike Air 50 Sneakers</h3>
-                    <div class="card-price">
-                        <strong>49.00$</strong>
-                    </div>
-                </a>
+    <div class="filters">
+        <div class="container filters-wrap">
+            <div class="filters-price">
+                <div class="filters-icon">
+                    <img src="assets/img/icons/filter.svg" alt="Filter icon">
+                </div>
+                <div class="filters-price-wrap">
+                    <a href="#" class="filters-price-item active">Below 50$</a>
+                    <a href="#" class="filters-price-item">Above 50$</a>
+                </div>
             </div>
-            <a href="#" class="arrow-link latest-link">See more in catalog</a>
-        </div>
-    </section>
-
-    <section class="spotlight spacer-100">
-        <div class="container">
-            <div class="spotlight-wrap">
-                <div class="spotlight-side">
-                    <h2 class="title title--medium spotlight-title">Here you will find <br> <span>exceptional quality</span> shoes</h2>
-                    <div class="body-text spotlight-text">
-                        <p>Text that will convince users to buy sneakers from this store. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
-                        <p>Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.</p>
-                    </div>
-                    <a href="#" class="btn spotlight-btn btn--primary">
-                        Shop now
-                        <img src="assets/img/icons/arrow-right-light.svg" alt="Arrow pointing to the right">
+            <div class="filters-colors">
+                <div class="filters-icon">
+                    <img src="assets/img/icons/color-choice.svg" alt="Color-choice icon">
+                </div>
+                <div class="filters-colors-wrap">
+                    <a href="#" class="filters-colors-item active" data-color="black" aria-label="black">
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="22.5" cy="22.5" r="22" stroke="#26273C" stroke-opacity="0.1" class="outline"/>
+                            <circle cx="22.5" cy="22.5" r="15.5" fill="black" class="swatch"/>
+                        </svg>                        
+                    </a>
+                    <a href="#" class="filters-colors-item" data-color="white" aria-label="white">
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="22.5" cy="22.5" r="22" stroke="#26273C" stroke-opacity="0.1" class="outline"/>
+                            <circle cx="22.5" cy="22.5" r="15.5" fill="white" class="swatch"/>
+                        </svg>                        
+                    </a>
+                    <a href="#" class="filters-colors-item" data-color="red" aria-label="red">
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="22.5" cy="22.5" r="22" stroke="#26273C" stroke-opacity="0.1" class="outline"/>
+                            <circle cx="22.5" cy="22.5" r="15.5" fill="red" class="swatch"/>
+                        </svg>                        
+                    </a>
+                    <a href="#" class="filters-colors-item" data-color="orange" aria-label="orange">
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="22.5" cy="22.5" r="22" stroke="#26273C" stroke-opacity="0.1" class="outline"/>
+                            <circle cx="22.5" cy="22.5" r="15.5" fill="orange" class="swatch"/>
+                        </svg>                        
+                    </a>
+                    <a href="#" class="filters-colors-item" data-color="yellow" aria-label="yellow">
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="22.5" cy="22.5" r="22" stroke="#26273C" stroke-opacity="0.1" class="outline"/>
+                            <circle cx="22.5" cy="22.5" r="15.5" fill="yellow" class="swatch"/>
+                        </svg>                        
+                    </a>
+                    <a href="#" class="filters-colors-item" data-color="blue" aria-label="blue">
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="22.5" cy="22.5" r="22" stroke="#26273C" stroke-opacity="0.1" class="outline"/>
+                            <circle cx="22.5" cy="22.5" r="15.5" fill="blue" class="swatch"/>
+                        </svg>                        
+                    </a>
+                    <a href="#" class="filters-colors-item" data-color="pink" aria-label="pink">
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="22.5" cy="22.5" r="22" stroke="#26273C" stroke-opacity="0.1" class="outline"/>
+                            <circle cx="22.5" cy="22.5" r="15.5" fill="pink" class="swatch"/>
+                        </svg>                        
                     </a>
                 </div>
-                <div class="spotlight-side">
-                    <div class="spotlight-img">
-                        <img src="assets/img/about-img.png" alt="A white shoe on top of a rock">
-                    </div>
-                </div>
             </div>
         </div>
-    </section>
+    </div>
+
+    <div class="catalog">
+        <div class="container catalog-wrap">
+            <a href="#" class="card">
+                <div class="card-img">
+                    <img src="assets/img/product-1.jpg" alt="product">
+                </div>
+                <h3 class="card-title">Nike Air 50 Sneakers</h3>
+                <div class="card-price">
+                    <strong>58.00$</strong>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-img">
+                    <img src="assets/img/product-2.jpg" alt="product">
+                </div>
+                <h3 class="card-title">Nike Air 50 Sneakers</h3>
+                <div class="card-price">
+                    <strong>58.00$</strong>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-img">
+                    <img src="assets/img/product-3.jpg" alt="product">
+                </div>
+                <h3 class="card-title">Nike Air 50 Sneakers</h3>
+                <div class="card-price">
+                    <strong>58.00$</strong>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-img">
+                    <img src="assets/img/product-4.jpg" alt="product">
+                </div>
+                <h3 class="card-title">Nike Air 50 Sneakers</h3>
+                <div class="card-price">
+                    <strong>58.00$</strong>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-img">
+                    <img src="assets/img/product-1.jpg" alt="product">
+                </div>
+                <h3 class="card-title">Nike Air 50 Sneakers</h3>
+                <div class="card-price">
+                    <strong>58.00$</strong>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-img">
+                    <img src="assets/img/product-2.jpg" alt="product">
+                </div>
+                <h3 class="card-title">Nike Air 50 Sneakers</h3>
+                <div class="card-price">
+                    <strong>58.00$</strong>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-img">
+                    <img src="assets/img/product-3.jpg" alt="product">
+                </div>
+                <h3 class="card-title">Nike Air 50 Sneakers</h3>
+                <div class="card-price">
+                    <strong>58.00$</strong>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-img">
+                    <img src="assets/img/product-4.jpg" alt="product">
+                </div>
+                <h3 class="card-title">Nike Air 50 Sneakers</h3>
+                <div class="card-price">
+                    <strong>58.00$</strong>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-img">
+                    <img src="assets/img/product-1.jpg" alt="product">
+                </div>
+                <h3 class="card-title">Nike Air 50 Sneakers</h3>
+                <div class="card-price">
+                    <strong>58.00$</strong>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-img">
+                    <img src="assets/img/product-2.jpg" alt="product">
+                </div>
+                <h3 class="card-title">Nike Air 50 Sneakers</h3>
+                <div class="card-price">
+                    <strong>58.00$</strong>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-img">
+                    <img src="assets/img/product-3.jpg" alt="product">
+                </div>
+                <h3 class="card-title">Nike Air 50 Sneakers</h3>
+                <div class="card-price">
+                    <strong>58.00$</strong>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-img">
+                    <img src="assets/img/product-4.jpg" alt="product">
+                </div>
+                <h3 class="card-title">Nike Air 50 Sneakers</h3>
+                <div class="card-price">
+                    <strong>58.00$</strong>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-img">
+                    <img src="assets/img/product-1.jpg" alt="product">
+                </div>
+                <h3 class="card-title">Nike Air 50 Sneakers</h3>
+                <div class="card-price">
+                    <strong>58.00$</strong>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-img">
+                    <img src="assets/img/product-2.jpg" alt="product">
+                </div>
+                <h3 class="card-title">Nike Air 50 Sneakers</h3>
+                <div class="card-price">
+                    <strong>58.00$</strong>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-img">
+                    <img src="assets/img/product-3.jpg" alt="product">
+                </div>
+                <h3 class="card-title">Nike Air 50 Sneakers</h3>
+                <div class="card-price">
+                    <strong>58.00$</strong>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-img">
+                    <img src="assets/img/product-4.jpg" alt="product">
+                </div>
+                <h3 class="card-title">Nike Air 50 Sneakers</h3>
+                <div class="card-price">
+                    <strong>58.00$</strong>
+                </div>
+            </a>
+        </div>
+    </div>
 
     <footer class="footer spacer-100">
         <div class="container">
